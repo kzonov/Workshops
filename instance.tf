@@ -80,7 +80,7 @@ resource "aws_security_group_rule" "allow-ssh" {
 }
 
 resource "aws_key_pair" "deployer" {
-  key_name   = "deployer-key"
+  key_name   = "kzonov-babbel"
   public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDjCV1k+24/R89WWIFYZQRQ3kRVkVvNxmPATZBQ7mxAmtLGKmeCjsZLX6FWruN3IGyjSpsFTenFIVWQcIBu2eTxB2Cn9Ict4ycoQVaxgOec2Q9oxQBCLPNTL+8B5sXQ/gNQmret8McwuBNQ1qlO0lI2hP/trmdkvgj94ISvZaF69jydxxpfylwLdF/ntXvDQPG0x+OBcPwoo4qw+lM0bTqTMTr+xPzJCCtBmMkiWocgGxCaW+8IR1vLi0z2eMO/yM9EIpmYCoHstObb4ShQcCVVVwnpWDCHE4AGxUjUdwiXeVwM+N5ZSCLlsvGDXK4pGiXq0j6ecg0UGu4M69HXptvl kzonov@babbel.com"
 }
 
