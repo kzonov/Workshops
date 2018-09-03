@@ -5,6 +5,16 @@ provider "aws" {
   profile = "sandbox"
 }
 
+terraform {
+  backend "s3" {
+    encrypt = true
+    bucket  = "dod-terraform-remote-state-storage-s3-kzonov"
+    region  = "eu-west-1"
+    profile = "sandbox"
+    key     = "kzonov/DOD.tfstate"
+  }
+}
+
 resource "aws_vpc" "dod" {
   cidr_block = "172.35.0.0/16"
 
