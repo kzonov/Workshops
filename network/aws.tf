@@ -10,5 +10,7 @@ terraform {
     region  = "eu-west-1"
     profile = "sandbox"
     key     = "kzonov/network.tfstate"
+
+    dynamodb_table = "dod-terraform-remote-state-locker-network-kzonov"
   }
 }
