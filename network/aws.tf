@@ -11,6 +11,6 @@ terraform {
     profile = "sandbox"
     key     = "kzonov/network.tfstate"
 
-    dynamodb_table = "dod-terraform-remote-state-locker-network-kzonov"
+    dynamodb_table = "dod-terraform-remote-state-lock-kzonov"
   }
 }
