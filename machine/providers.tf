@@ -9,7 +9,7 @@ terraform {
     bucket  = "dod-terraform-remote-state-storage-s3-kzonov"
     region  = "eu-west-1"
     profile = "sandbox"
-    key     = "kzonov/network.tfstate"
+    key     = "kzonov/machine.tfstate"
 
     dynamodb_table = "dod-terraform-remote-state-lock-kzonov"
   }

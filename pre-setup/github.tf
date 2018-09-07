@@ -1,8 +1,4 @@
-provider "github" {
-  organization = "lessonnine"
-}
-
-resource "github_repository" "removeme" {
-  name    = "DevOpsDays workshop example"
+resource "github_repository" "devopsdays" {
+  name = "DevOpsDays workshop example"
   private = false
 }
