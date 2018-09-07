@@ -15,8 +15,8 @@ resource "aws_security_group_rule" "allow-ping" {
   type        = "ingress"
   protocol    = "icmp"
   cidr_blocks = ["0.0.0.0/0"]
-  from_port = 8
-  to_port = 0
+  from_port   = 8
+  to_port     = 0
 
   security_group_id = "${aws_security_group.with-http-and-ssh-allowed.id}"
 }

@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "eu-west-1"
+  region  = "eu-west-1"
   profile = "sandbox"
 }
 
@@ -17,8 +17,9 @@ terraform {
 
 data "terraform_remote_state" "network" {
   backend = "s3"
+
   config {
-    bucket = "dod-terraform-remote-state-storage-s3-kzonov"
+    bucket  = "dod-terraform-remote-state-storage-s3-kzonov"
     region  = "eu-west-1"
     profile = "sandbox"
     key     = "kzonov/network.tfstate"
