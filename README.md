@@ -1,6 +1,8 @@
 # DevOpsDays Terraform workshop code outcomes
 In this repository you can find an example of code, which we've built during the hands-on workshop at the DevOpsDays Berlin 2018.
 
+[Slides from the pre-workshop introduction](https://www.slideshare.net/graffzon/devopsdays-berlin-2018-terraform-handson-workshop)
+
 ## Folders structure
 This repository contains three folders.
 1. `Pre-setup`. This folder includes code, which in production environment should be applied before everything else. It contains of Github repository, AWS S3 bucket for Terraform state storing and AWS DynamoDB table for Terraform state lock.
