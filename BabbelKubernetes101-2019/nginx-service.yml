@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+spec:
+  type: NodePort
+  ports:
+  - port: 80 # The port that *this* service should serve at
+    targetPort: 80 # The container port
+    protocol: TCP
+  selector:
+    app: nginx
+  type: LoadBalancer
